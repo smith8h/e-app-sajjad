@@ -41,7 +41,7 @@ flutter:
 
   # ----------- local fonts ------------- #
   fonts:
-    - family: Product Sans
+    - family: sans
       fonts:
         - asset: assets/fonts/sans.ttf
           weight: 400
