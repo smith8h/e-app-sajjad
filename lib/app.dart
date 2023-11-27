@@ -7,6 +7,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // TODO : edit title name
       title: 'Sajjad E-Store',
       themeMode: ThemeMode.system,
       theme: ETheme.light,
