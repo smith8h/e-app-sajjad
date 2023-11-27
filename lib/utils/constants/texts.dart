@@ -1,6 +1,6 @@
 import 'package:e_store/utils/constants/enums.dart';
 
-class EText {
+class ETexts {
   // Global
   static String appName(AppLang lang) {
     return lang == AppLang.arb ? 'كوزموسينت' : lang == AppLang.eng ? 'CosmoScent' : '';
