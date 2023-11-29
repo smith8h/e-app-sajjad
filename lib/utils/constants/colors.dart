@@ -4,9 +4,9 @@ class EColors {
   EColors._();
 
   // App Basic Colors
-  static const primary = Color(0xFF6A87E3);
-  static const secondary = Color(0xFFFFE24B);
-  static const accent = Color(0xFFb0c7ff);
+  static const primary = Color(0xFF09a9ff);
+  static const secondary = Color(0xFFb25eff);
+  static const accent = Color(0xFF09a9ff);
 
   // LinearGradient
   static Gradient linerGradient = const LinearGradient(
@@ -20,22 +20,22 @@ class EColors {
   );
 
   // text colors
-  static const textPrimary = Color(0xFF333333);
-  static const textSecondary = Color(0xFF6C7570);
+  static const textPrimary = Colors.white; // Color(0xFF333333);
+  static const textSecondary = Colors.white;
   static const textWhite = Colors.white;
 
   // Background Colors
-  static const light = Color(0xFFF6F6F6);
-  static const dark = Color(0xFF272727);
+  static const bgLight = Color(0xFFF6F6F6);
+  static const bgDark = Color(0xFF272727);
   static const primaryBackground = Color(0xFFF3F5FF);
 
   // Background Container Colors
-  static const tightContainer = Color(0xFFF6F6F6);
+  static const lightContainer = Color(0xFFF6F6F6);
   static final dorkContainer = EColors.white.withOpacity(0.1);
 
   // Button Colors
-  static const buttonPrimary = Color(0xFF4b68ff);
-  static const buttonSecondary = Color(0xFF6C7570);
+  static const buttonPrimary = Color(0xFFb25eff);
+  static const buttonSecondary = Color(0xFFff9db8);
   static const buttonDisabled = Color(0xFFC4C4C4);
 
   // Border Colors
@@ -56,4 +56,9 @@ class EColors {
   static const softGrey = Color(0xFFF4F4F4);
   static const lightGrey = Color(0xFFF9F9F9);
   static const white = Color(0xFFFFFFFF);
+
+  // App theme colors
+  static const purple = Color(0xFFb25eff);
+  static const blue = Color(0xFF09a9ff);
+  static const pink = Color(0xFFff9db8);
 }
