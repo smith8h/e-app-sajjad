@@ -1,3 +1,5 @@
+import 'package:e_store/utils/constants/colors.dart';
+
 import 'custom/appbar_theme.dart';
 import 'custom/bottom_sheet_theme.dart';
 import 'custom/checkbox_theme.dart';
@@ -15,8 +17,8 @@ class ETheme {
     useMaterial3: true,
     fontFamily: 'sans',
     brightness: Brightness.light,
-    primaryColor: const Color(0xFF6A87E3),
-    scaffoldBackgroundColor: Colors.white,
+    primaryColor: EColors.primary,
+    scaffoldBackgroundColor: EColors.bgLight,
     textTheme: ETextTheme.light,
     elevatedButtonTheme: EElevatedButtonTheme.light,
     appBarTheme: EAppBarTheme.light,
@@ -32,7 +34,7 @@ class ETheme {
     fontFamily: 'sans',
     brightness: Brightness.dark,
     primaryColor: const Color(0xFF6A87E3),
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: EColors.bgDark,
     textTheme: ETextTheme.dark,
     elevatedButtonTheme: EElevatedButtonTheme.dark,
     appBarTheme: EAppBarTheme.dark,
