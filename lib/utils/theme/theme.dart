@@ -1,5 +1,4 @@
 import 'package:e_store/utils/constants/colors.dart';
-
 import 'custom/appbar_theme.dart';
 import 'custom/bottom_sheet_theme.dart';
 import 'custom/checkbox_theme.dart';
@@ -33,7 +32,7 @@ class ETheme {
     useMaterial3: true,
     fontFamily: 'sans',
     brightness: Brightness.dark,
-    primaryColor: const Color(0xFF6A87E3),
+    primaryColor:  EColors.primary,
     scaffoldBackgroundColor: EColors.bgDark,
     textTheme: ETextTheme.dark,
     elevatedButtonTheme: EElevatedButtonTheme.dark,

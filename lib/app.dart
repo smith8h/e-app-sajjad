@@ -1,3 +1,4 @@
+import 'package:e_store/features/authentication/screens/login.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/texts.dart';
 import 'package:e_store/utils/theme/theme.dart';
@@ -15,12 +16,13 @@ class App extends StatelessWidget {
       theme: ETheme.light,
       darkTheme: ETheme.dark,
       debugShowCheckedModeBanner: false,
+      home: const LoginScreen(),
       // initialBinding: GeneralBindings(),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Awesome! 🎊 Project Structure is set up and running.', textAlign: TextAlign.center,),
-        ),
-      ),
+      // home: const Scaffold(
+      //   body: Center(
+      //     child: Text('Awesome! 🎊 Project Structure is set up and running.', textAlign: TextAlign.center,),
+      //   ),
+      // ),
     );
   }
 }

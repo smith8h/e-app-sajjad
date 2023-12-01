@@ -4,8 +4,8 @@ class EColors {
   EColors._();
 
   // App Basic Colors
-  static const primary = Color(0xFF09a9ff);
-  static const secondary = Color(0xFFb25eff);
+  static const primary = Color(0xFFb25eff);
+  static const secondary = Color(0xFF09a9ff);
   static const accent = Color(0xFF09a9ff);
 
   // LinearGradient
@@ -31,7 +31,7 @@ class EColors {
 
   // Background Container Colors
   static const lightContainer = Color(0xFFF6F6F6);
-  static final dorkContainer = EColors.white.withOpacity(0.1);
+  static final darkContainer = EColors.white.withOpacity(0.1);
 
   // Button Colors
   static const buttonPrimary = Color(0xFFb25eff);
