@@ -19,21 +19,22 @@ class OnBoardingScreen extends StatelessWidget {
     final boardingController = Get.put(OnBoardingController());
     final isDarkMode = EHelperFunctions.isDarkMode();
     EDeviceUtils.setDarkModeBarColors(isDarkMode);
+    var texts = ETexts(AppLang.arb);
     var onBoardingItems = [
       {
         'image': EImages.onBoarding1,
-        'title': ETexts.onBoarding1Title(AppLang.eng), // Todo : change from settings
-        'subtitle': ETexts.onBoarding1Subtitle(AppLang.eng),
+        'title': texts.onBoarding1(), // Todo : change from settings
+        'subtitle': texts.onBoarding1Subtitle(),
       },
       {
         'image': EImages.onBoarding2,
-        'title': ETexts.onBoarding2Title(AppLang.eng),
-        'subtitle': ETexts.onBoarding2Subtitle(AppLang.eng),
+        'title': texts.onBoarding2(),
+        'subtitle': texts.onBoarding2Subtitle(),
       },
       {
         'image': EImages.onBoarding3,
-        'title': ETexts.onBoarding3Title(AppLang.eng),
-        'subtitle': ETexts.onBoarding3Subtitle(AppLang.eng),
+        'title': texts.onBoarding3(),
+        'subtitle': texts.onBoarding3Subtitle(),
       },
     ];
 
@@ -54,7 +55,7 @@ class OnBoardingScreen extends StatelessWidget {
                     height: EHelperFunctions.screenHeight() * 0.6,
                   ),
                   Text(
-                    ETexts.onBoarding1Title(AppLang.arb),
+                    onBoardingItems[index]['title']!,
                     style: Theme.of(context).textTheme.headlineMedium,
                     textAlign: TextAlign.center,
                   ),
@@ -62,7 +63,7 @@ class OnBoardingScreen extends StatelessWidget {
                     height: ESizes.spaceBtwItems,
                   ),
                   Text(
-                    ETexts.onBoarding1Subtitle(AppLang.arb),
+                    onBoardingItems[index]['subtitle']!,
                     style: Theme.of(context).textTheme.bodyMedium,
                     textAlign: TextAlign.center,
                   ),
@@ -75,7 +76,7 @@ class OnBoardingScreen extends StatelessWidget {
             right: ESizes.defaultSpace,
             child: TextButton(
               onPressed: OnBoardingController.instance.skipPage,
-              child: Text(ETexts.skip(AppLang.eng)),
+              child: Text(texts.skip()),
             ),
           ),
           Positioned(

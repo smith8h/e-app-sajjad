@@ -1,64 +1,44 @@
 import 'package:e_store/utils/constants/enums.dart';
 
 class ETexts {
+  AppLang lang;
+
+  ETexts(this.lang);
+
   // Global
   static String appName = 'CosmoScent';
-  static String ok(AppLang lang) {
-    return lang == AppLang.arb ? 'حسنا' : 'OK';
-  }
-  static String cancel(AppLang lang) {
-    return lang == AppLang.arb ? 'الغاء' : 'CANCEL';
-  }
+  String ok() => lang == AppLang.arb ? 'حسنا' : 'OK';
+  String cancel() => lang == AppLang.arb ? 'الغاء' : 'CANCEL';
 
   // on boarding
-  static String onBoarding1Title(AppLang lang) {
-    return lang == AppLang.arb ? 'عنوان 1' : 'title 1';
-  }
-  static String onBoarding1Subtitle(AppLang lang) {
-    return lang == AppLang.arb ? 'عنوان 2' : 'title 2';
-  }
-  static String onBoarding2Title(AppLang lang) {
-    return lang == AppLang.arb ? 'عنوان 2' : 'title 2';
-  }
-  static String onBoarding2Subtitle(AppLang lang) {
-    return lang == AppLang.arb ? 'عنوان 2' : 'title 2';
-  }
-  static String onBoarding3Title(AppLang lang) {
-    return lang == AppLang.arb ? 'عنوان 3' : 'title 3';
-  }
-  static String onBoarding3Subtitle(AppLang lang) {
-    return lang == AppLang.arb ? 'عنوان 3' : 'title 3';
-  }
-  static String skip(AppLang lang) {
-    return lang == AppLang.arb ? 'تخطي' : 'Skip';
-  }
+  String onBoarding1() => lang == AppLang.arb ? 'عنوان 1' : 'title 1';
+  String onBoarding1Subtitle() => lang == AppLang.arb ? 'عنوان 2' : 'title 2';
+  String onBoarding2() => lang == AppLang.arb ? 'عنوان 2' : 'title 2';
+  String onBoarding2Subtitle() => lang == AppLang.arb ? 'عنوان 2' : 'title 2';
+  String onBoarding3() => lang == AppLang.arb ? 'عنوان 3' : 'title 3';
+  String onBoarding3Subtitle() => lang == AppLang.arb ? 'عنوان 3' : 'title 3';
+  String skip() => lang == AppLang.arb ? 'تخطي' : 'Skip';
 
   // login
-  static String loginTitle(AppLang lang) {
-    return lang == AppLang.arb ? 'مرحبا بعودتك' : 'Welcome Back';
-  }
-  static String loginSubtitle(AppLang lang) {
-    return lang == AppLang.arb ? 'سجل الدخول واستمتع بمنتجاتنا الان' : 'Sign in and enjoy our products now';
-  }
-  static String loginEmailLabel(AppLang lang) {
-    return lang == AppLang.arb ? 'البريد الالكتروني' : 'EMail';
-  }
-  static String loginPasswordLabel(AppLang lang) {
-    return lang == AppLang.arb ? 'كلمة المرور' : 'Password';
-  }
-  static String rememberMe(AppLang lang) {
-    return lang == AppLang.arb ? 'تذكرني' : 'Remember me';
-  }
-  static String createAccount(AppLang lang) {
-    return lang == AppLang.arb ? 'انشاء حساب' : 'Create Account';
-  }
-  static String forgetPassword(AppLang lang) {
-    return lang == AppLang.arb ? 'نسيت كلمة المرور؟' : 'Forget password?';
-  }
-  static String login(AppLang lang) {
-    return lang == AppLang.arb ? 'تسجيل الدخول' : 'Login';
-  }
-  static String otherLogin(AppLang lang) {
-    return lang == AppLang.arb ? 'او باستخدام احد الخيارات' : 'Or using one of these';
-  }
+  String loginTitle() => lang == AppLang.arb ? 'مرحبا بعودتك' : 'Welcome Back';
+  String loginSubtitle() => lang == AppLang.arb ? 'سجل الدخول واستمتع بمنتجاتنا الان' : 'Sign in and enjoy our products now';
+  String loginEmail() => lang == AppLang.arb ? 'البريد الالكتروني' : 'EMail';
+  String password() => lang == AppLang.arb ? 'كلمة المرور' : 'Password';
+  String rememberMe() => lang == AppLang.arb ? 'تذكرني' : 'Remember me';
+  String createAccount() => lang == AppLang.arb ? 'انشاء حساب' : 'Create Account';
+  String forgetPassword() => lang == AppLang.arb ? 'نسيت كلمة المرور؟' : 'Forget password?';
+  String login() => lang == AppLang.arb ? 'تسجيل الدخول' : 'Login';
+  String otherLogin() => lang == AppLang.arb ? 'او باستخدام احد الخيارات' : 'Or using one of these';
+
+  // signup
+  String signupTitle() => lang == AppLang.arb ? 'للنشئ حسابك' : 'Let\'s Create Your Account';
+  String name() => lang == AppLang.arb ? 'الاسم الاول' : 'First Name';
+  String lastname() => lang == AppLang.arb ?  'الاسم الثاني' : 'Last Name';
+  String username() => lang == AppLang.arb ?  'المعرف الشخصي' : 'Username';
+  String phoneNumber() => lang == AppLang.arb ?  'رقم الهاتف' : 'Phone Number';
+  String confirmPassword() => lang == AppLang.arb ? 'تأكيد كلمة المرور' : 'Confirm Password';
+  String agreeTo() => lang == AppLang.arb ? 'اوافق على ' : 'I agree to ';
+  String and() => lang == AppLang.arb ? 'و ' : 'and ';
+  String privacyPolicy() => lang == AppLang.arb ? 'سياسة الخصوصية ' : 'Privacy Policy ';
+  String termsOfUse() => lang == AppLang.arb ? 'شروط الاستخدام ' : 'Terms of Use ';
 }

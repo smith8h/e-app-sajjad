@@ -1,3 +1,5 @@
+import 'package:e_store/features/authentication/screens/login.dart';
+import 'package:e_store/features/authentication/screens/onboarding.dart';
 import 'package:e_store/features/authentication/screens/signup_screen.dart';
 import 'package:e_store/utils/constants/texts.dart';
 import 'package:e_store/utils/theme/theme.dart';
@@ -15,7 +17,7 @@ class App extends StatelessWidget {
       theme: ETheme.light,
       darkTheme: ETheme.dark,
       debugShowCheckedModeBanner: false,
-      home: const SignupScreen(),
+      home: const OnBoardingScreen(),
     );
   }
 }
