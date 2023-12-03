@@ -107,6 +107,7 @@ class SignupScreen extends StatelessWidget {
                   ImageButton(icon: EImages.google, onClick: () {}),
                   const SizedBox(width: ESizes.spaceBtwItems),
                   ImageButton(icon: EImages.facebook, onClick: () {}),
+                  // todo : add on click methods
                 ],
               ),
             ],
