@@ -18,7 +18,7 @@ class OnBoardingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final boardingController = Get.put(OnBoardingController());
     final isDarkMode = EHelperFunctions.isDarkMode();
-
+    EDeviceUtils.setDarkModeBarColors(isDarkMode);
     var onBoardingItems = [
       {
         'image': EImages.onBoarding1,

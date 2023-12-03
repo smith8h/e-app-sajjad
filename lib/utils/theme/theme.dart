@@ -40,7 +40,7 @@ class ETheme {
     bottomSheetTheme: EBottomSheetTheme.dark,
     checkboxTheme: ECheckBoxTheme.dark,
     chipTheme: EChipTheme.dark,
-    outlinedButtonTheme: EOutlinedButtonTheme.light,
-    inputDecorationTheme: ETextFieldTheme.light,
+    outlinedButtonTheme: EOutlinedButtonTheme.dark,
+    inputDecorationTheme: ETextFieldTheme.dark,
   );
 }

@@ -5,14 +5,22 @@ import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
+import '../constants/colors.dart';
+
 class EDeviceUtils {
   static void hideKeyboard() {
     FocusScope.of(Get.context!).requestFocus(FocusNode());
   }
 
-  static Future<void> setStatusBarColor(Color color) async {
+  static setDarkModeBarColors(bool darkMode) {
     SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(statusBarColor: color),
+      SystemUiOverlayStyle(
+        statusBarColor: darkMode ? EColors.bgDark : EColors.bgLight,
+        systemNavigationBarColor: darkMode ? EColors.bgDark : EColors.bgLight,
+        statusBarBrightness: darkMode ? Brightness.dark : Brightness.light,
+        statusBarIconBrightness: darkMode ? Brightness.light : Brightness.dark,
+        systemNavigationBarIconBrightness: darkMode ? Brightness.light : Brightness.dark,
+      ),
     );
   }
 
