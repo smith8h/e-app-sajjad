@@ -1,7 +1,7 @@
 import 'package:e_store/common/styles/spacing_style.dart';
 import 'package:e_store/features/authentication/screens/signup_screen.dart';
-import 'package:e_store/features/authentication/views/divider.dart';
-import 'package:e_store/features/authentication/views/header.dart';
+import 'package:e_store/common/widgets/divider.dart';
+import 'package:e_store/common/widgets/header.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -11,10 +11,11 @@ import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../views/border_button.dart';
-import '../views/form_field.dart';
-import '../views/image_button.dart';
-import '../views/solid_button.dart';
+import '../../../common/widgets/border_button.dart';
+import '../../../common/widgets/check_button.dart';
+import '../../../common/widgets/form_field.dart';
+import '../../../common/widgets/image_button.dart';
+import '../../../common/widgets/solid_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -44,15 +45,7 @@ class LoginScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Row(
-                          children: [
-                            Checkbox(
-                              value: true,
-                              onChanged: (isChecked) {},
-                            ),
-                            Text(texts.rememberMe()),
-                          ],
-                        ),
+                        CheckButton(text: texts.rememberMe()),
                         TextButton(
                           onPressed: () {},
                           child: Text(texts.forgetPassword()),
@@ -62,7 +55,7 @@ class LoginScreen extends StatelessWidget {
                     const SizedBox(height: ESizes.spaceBtwInputFields),
                     SolidButton(text: texts.login(), onClick: () {}),
                     const SizedBox(height: ESizes.spaceBtwItems),
-                    BorderButton(text: texts.createAccount(), onClick: () => Get.to(() => const SignupScreen())),
+                    BorderButton(text: texts.createAccount(), onClick: () => Get.offAll(() => const SignupScreen())),
                   ],
                 ),
               ),
@@ -72,9 +65,9 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ImageButton(icon: EImages.google, onClick: () {}),
+                  ImageButton(image: EImages.google, onClick: () {}),
                   const SizedBox(width: ESizes.spaceBtwItems),
-                  ImageButton(icon: EImages.facebook, onClick: () {}),
+                  ImageButton(image: EImages.facebook, onClick: () {}),
                 ],
               ),
             ],

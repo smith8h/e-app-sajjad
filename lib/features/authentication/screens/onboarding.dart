@@ -17,8 +17,8 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final boardingController = Get.put(OnBoardingController());
-    final isDarkMode = EHelperFunctions.isDarkMode();
-    EDeviceUtils.setDarkModeBarColors(isDarkMode);
+    final darkMode = EHelperFunctions.isDarkMode();
+    EDeviceUtils.setDarkModeBarColors(darkMode);
     var texts = ETexts(AppLang.arb);
     var onBoardingItems = [
       {
@@ -88,7 +88,7 @@ class OnBoardingScreen extends StatelessWidget {
               count: 3,
               effect: ExpandingDotsEffect(
                 activeDotColor: EColors.primary,
-                dotColor: isDarkMode ? EColors.darkerGrey : EColors.darkGrey,
+                dotColor: darkMode ? EColors.darkerGrey : EColors.darkGrey,
                 dotHeight: 9,
               ),
             ),

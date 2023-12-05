@@ -1,6 +1,4 @@
-import 'package:e_store/features/authentication/screens/login.dart';
 import 'package:e_store/features/authentication/screens/onboarding.dart';
-import 'package:e_store/features/authentication/screens/signup_screen.dart';
 import 'package:e_store/utils/constants/texts.dart';
 import 'package:e_store/utils/theme/theme.dart';
 import 'package:flutter/material.dart';

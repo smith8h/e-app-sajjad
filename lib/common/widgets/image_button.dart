@@ -5,12 +5,14 @@ import '../../../utils/constants/sizes.dart';
 
 class ImageButton extends StatelessWidget {
   final VoidCallback onClick;
-  final String icon;
+  final String? image;
+  final IconData? icon;
 
   const ImageButton({
     super.key,
     required this.onClick,
-    required this.icon,
+    this.image,
+    this.icon,
   });
 
   @override
@@ -19,7 +21,7 @@ class ImageButton extends StatelessWidget {
       decoration: BoxDecoration(border: Border.all(color: EColors.grey), borderRadius: BorderRadius.circular(100)),
       child: IconButton(
         onPressed: onClick,
-        icon: Image(width: ESizes.iconMd, height: ESizes.iconMd, image: AssetImage(icon)),
+        icon: image != null ? Image(width: ESizes.iconMd, height: ESizes.iconMd, image: AssetImage(image!)) : Icon(icon),
       ),
     );
   }

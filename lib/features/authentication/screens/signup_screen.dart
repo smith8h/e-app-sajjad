@@ -1,13 +1,15 @@
-import 'package:e_store/features/authentication/views/divider.dart';
-import 'package:e_store/features/authentication/views/form_field.dart';
-import 'package:e_store/features/authentication/views/image_button.dart';
-import 'package:e_store/features/authentication/views/solid_button.dart';
+import 'package:e_store/features/authentication/screens/verification_screen.dart';
+import 'package:e_store/common/widgets/divider.dart';
+import 'package:e_store/common/widgets/form_field.dart';
+import 'package:e_store/common/widgets/solid_button.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import '../../../common/widgets/image_button.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/device/device_utility.dart';
 import '../../../utils/helpers/helper_functions.dart';
@@ -71,20 +73,22 @@ class SignupScreen extends StatelessWidget {
                             children: [
                               TextSpan(text: texts.agreeTo(), style: Theme.of(context).textTheme.bodySmall),
                               TextSpan(
-                                  text: texts.privacyPolicy(),
-                                  style: Theme.of(context).textTheme.bodyMedium!.apply(
-                                        color: EColors.secondary,
-                                        decoration: TextDecoration.underline,
-                                        decorationColor: EColors.secondary,
-                                      )),
+                                text: texts.privacyPolicy(),
+                                style: Theme.of(context).textTheme.bodySmall!.apply(
+                                      color: EColors.secondary,
+                                      decoration: TextDecoration.underline,
+                                      decorationColor: EColors.secondary,
+                                    ),
+                              ),
                               TextSpan(text: texts.and(), style: Theme.of(context).textTheme.bodySmall),
                               TextSpan(
-                                  text: texts.termsOfUse(),
-                                  style: Theme.of(context).textTheme.bodyMedium!.apply(
-                                        color: EColors.secondary,
-                                        decoration: TextDecoration.underline,
-                                        decorationColor: EColors.secondary,
-                                      )),
+                                text: texts.termsOfUse(),
+                                style: Theme.of(context).textTheme.bodySmall!.apply(
+                                      color: EColors.secondary,
+                                      decoration: TextDecoration.underline,
+                                      decorationColor: EColors.secondary,
+                                    ),
+                              ),
                             ],
                           ),
                         ),
@@ -93,7 +97,7 @@ class SignupScreen extends StatelessWidget {
                     const SizedBox(height: ESizes.spaceBtwSections),
                     SolidButton(
                       text: texts.createAccount(),
-                      onClick: () {},
+                      onClick: () => Get.to(() => const VerificationScreen()),
                     ),
                   ],
                 ),
@@ -104,10 +108,9 @@ class SignupScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ImageButton(icon: EImages.google, onClick: () {}),
+                  ImageButton(image: EImages.google, onClick: () {}),
                   const SizedBox(width: ESizes.spaceBtwItems),
-                  ImageButton(icon: EImages.facebook, onClick: () {}),
-                  // todo : add on click methods
+                  ImageButton(image: EImages.facebook, onClick: () {}),
                 ],
               ),
             ],
