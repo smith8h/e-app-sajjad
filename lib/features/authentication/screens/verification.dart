@@ -1,6 +1,6 @@
 import 'package:e_store/features/authentication/screens/login.dart';
-import 'package:e_store/common/widgets/border_button.dart';
-import 'package:e_store/common/widgets/solid_button.dart';
+import 'package:e_store/common/widgets/custom_shapes/border_button.dart';
+import 'package:e_store/common/widgets/custom_shapes/solid_button.dart';
 import 'package:e_store/features/authentication/screens/success_verification.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';

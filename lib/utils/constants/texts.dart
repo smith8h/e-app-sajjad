@@ -95,9 +95,16 @@ class ETexts {
       : 'Don\'t worry, people sometimes forge too, write your Email and we\'ll send you a reset email.';
 
   // reset pass
-  String  resetPasswordTitle() => lang == AppLang.arb ? 'تم إرسال البريد الإلكتروني لإعادة تعيين كلمة المرور' : 'Password Reset Email Sent';
+  String resetPasswordTitle() =>
+      lang == AppLang.arb ? 'تم إرسال البريد الإلكتروني لإعادة تعيين كلمة المرور' : 'Password Reset Email Sent';
 
   String resetPasswordSubtitle() => lang == AppLang.arb
       ? 'أمان حسابك هو أولويتنا! لقد أرسلنا لك رابطا آمنا لتغيير كلمة المرور الخاصة بك بأمان والحفاظ على حماية حسابك.'
       : 'Your Account Security is Our Priority! We\'ve Sent You a secure Link to safely Change your password and Keep Your Account Protected.';
+
+  // navigation menu
+  String home() => lang == AppLang.arb ? 'الرئيسية' : 'Home';
+  String shop() => lang == AppLang.arb ? 'المتجر' : 'Shop';
+  String wishList() => lang == AppLang.arb ? 'المفضلة' : 'Wish List';
+  String profile() => lang == AppLang.arb ? 'الملف الشخصي' : 'Profile';
 }
