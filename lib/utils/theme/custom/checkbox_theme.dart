@@ -1,3 +1,4 @@
+import 'package:e_store/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class ECheckBoxTheme {
@@ -8,7 +9,7 @@ class ECheckBoxTheme {
     checkColor:
         MaterialStateProperty.resolveWith((states) => states.contains(MaterialState.selected) ? Colors.white : Colors.black),
     fillColor: MaterialStateProperty.resolveWith(
-        (states) => states.contains(MaterialState.selected) ? const Color(0xFF6A87E3) : Colors.transparent),
+        (states) => states.contains(MaterialState.selected) ? EColors.primary : Colors.transparent),
   );
 
   static CheckboxThemeData dark = CheckboxThemeData(
@@ -16,6 +17,6 @@ class ECheckBoxTheme {
     checkColor:
         MaterialStateProperty.resolveWith((states) => states.contains(MaterialState.selected) ? Colors.white : Colors.black),
     fillColor: MaterialStateProperty.resolveWith(
-        (states) => states.contains(MaterialState.selected) ? const Color(0xFF6A87E3) : Colors.transparent),
+        (states) => states.contains(MaterialState.selected) ? EColors.primary : Colors.transparent),
   );
 }

@@ -1,4 +1,4 @@
-import 'package:e_store/utils/constants/enums.dart';
+import 'package:e_store/features/authentication/screens/onboarding.dart';
 import 'package:e_store/utils/constants/texts.dart';
 import 'package:e_store/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -10,17 +10,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: ETexts.appName(AppLang.arb),
+      title: ETexts.appName,
       themeMode: ThemeMode.system,
       theme: ETheme.light,
       darkTheme: ETheme.dark,
       debugShowCheckedModeBanner: false,
-      // initialBinding: GeneralBindings(),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Awesome! 🎊 Project Structure is set up and running.', textAlign: TextAlign.center,),
-        ),
-      ),
+      home: const OnBoardingScreen(),
     );
   }
 }
