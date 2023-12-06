@@ -1,7 +1,7 @@
 
 enum TextSize { small, medium, large }
 
-enum AppLang { arb, eng, kur }
+enum AppLang { arb, eng }
 
 enum OrderStatus { processing, shipped, delivered }
 

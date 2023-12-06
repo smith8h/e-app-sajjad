@@ -1,6 +1,7 @@
 import 'package:e_store/features/authentication/screens/login.dart';
 import 'package:e_store/common/widgets/border_button.dart';
 import 'package:e_store/common/widgets/solid_button.dart';
+import 'package:e_store/features/authentication/screens/success_verification.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -39,7 +40,7 @@ class VerificationScreen extends StatelessWidget {
               const SizedBox(height: ESizes.spaceBtwItems),
               Text(texts.confirmEmailSubtitle(), style: Theme.of(context).textTheme.labelLarge, textAlign: TextAlign.center),
               const SizedBox(height: ESizes.spaceBtwSections),
-              SolidButton(text: texts.confirm(), onClick: () {}),
+              SolidButton(text: texts.confirm(), onClick: () => Get.offAll(() => const SuccessVerificationScreen())),
               const SizedBox(height: ESizes.spaceBtwItems),
               BorderButton(text: texts.resendEmail(), onClick: () {}),
             ],

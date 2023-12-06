@@ -17,4 +17,7 @@ class EImages {
 
   // verification
   static const verifying = 'assets/images/illustrators/verifying.png';
+
+  // reset password
+  static const forgetPassword = 'assets/images/illustrators/forget_pass.png';
 }

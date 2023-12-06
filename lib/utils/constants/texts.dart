@@ -32,7 +32,7 @@ class ETexts {
 
   String loginSubtitle() => lang == AppLang.arb ? 'سجل الدخول واستمتع بمنتجاتنا الان' : 'Sign in and enjoy our products now';
 
-  String loginEmail() => lang == AppLang.arb ? 'البريد الالكتروني' : 'EMail';
+  String email() => lang == AppLang.arb ? 'البريد الالكتروني' : 'EMail';
 
   String password() => lang == AppLang.arb ? 'كلمة المرور' : 'Password';
 
@@ -73,6 +73,31 @@ class ETexts {
   String confirmEmailSubtitle() => lang == AppLang.arb
       ? 'يرجى تأكيد البريد الألكتروني لضمان استمرارية استخدام خدماتنا ومنتجاتنا.'
       : 'Please confirm E-mail to ensure using the latest of our services and products.';
+
   String confirm() => lang == AppLang.arb ? 'تأكيد' : 'Confirm';
+
   String resendEmail() => lang == AppLang.arb ? 'أعد الأرسال' : 'Resend Email';
+
+  // success verification
+  String emailConfirmedTitle() => lang == AppLang.arb ? 'تم تأكيد البريد الألكتروني' : 'Email Successfully Verified';
+
+  String emailConfirmedSubtitle() => lang == AppLang.arb
+      ? 'بأمكانك الان تصفح منتجاتنا والتمتع بخدماتنا.'
+      : 'You can now continue to surf our products and enjoy our services.';
+
+  String continues() => lang == AppLang.arb ? 'متابعة' : 'Continue';
+
+  // forget pass
+  String forgetPasswordTitle() => lang == AppLang.arb ? 'نسيت كلمة المرور' : 'Forget Your Password';
+
+  String forgetPasswordSubtitle() => lang == AppLang.arb
+      ? 'بعض الاحيان الناس ينسون ايضا! اكتب بريدك الالكتروني وسنرسل لك طلب اعادة تعيين كلمة المرور'
+      : 'Don\'t worry, people sometimes forge too, write your Email and we\'ll send you a reset email.';
+
+  // reset pass
+  String  resetPasswordTitle() => lang == AppLang.arb ? 'تم إرسال البريد الإلكتروني لإعادة تعيين كلمة المرور' : 'Password Reset Email Sent';
+
+  String resetPasswordSubtitle() => lang == AppLang.arb
+      ? 'أمان حسابك هو أولويتنا! لقد أرسلنا لك رابطا آمنا لتغيير كلمة المرور الخاصة بك بأمان والحفاظ على حماية حسابك.'
+      : 'Your Account Security is Our Priority! We\'ve Sent You a secure Link to safely Change your password and Keep Your Account Protected.';
 }

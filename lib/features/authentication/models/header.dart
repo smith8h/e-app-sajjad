@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../utils/constants/sizes.dart';
+import '../../../utils/constants/sizes.dart';
 
 class Header extends StatelessWidget {
   final String title, subtitle, image;

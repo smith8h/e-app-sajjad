@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/constants/colors.dart';
+import '../../../utils/constants/colors.dart';
 
 class EDivider extends StatelessWidget {
   final bool darkMode;

@@ -1,7 +1,8 @@
 import 'package:e_store/common/styles/spacing_style.dart';
-import 'package:e_store/features/authentication/screens/signup_screen.dart';
-import 'package:e_store/common/widgets/divider.dart';
-import 'package:e_store/common/widgets/header.dart';
+import 'package:e_store/features/authentication/screens/forget_pass.dart';
+import 'package:e_store/features/authentication/screens/signup.dart';
+import 'package:e_store/features/authentication/models/divider.dart';
+import 'package:e_store/features/authentication/models/header.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -38,7 +39,7 @@ class LoginScreen extends StatelessWidget {
               Form(
                 child: Column(
                   children: [
-                    EditText(prefixIcon: Iconsax.direct_right, label: texts.loginEmail()),
+                    EditText(prefixIcon: Iconsax.direct_right, label: texts.email()),
                     const SizedBox(height: ESizes.spaceBtwInputFields),
                     EditText(prefixIcon: Iconsax.password_check, label: texts.password(), suffixIcon: Iconsax.eye_slash),
                     const SizedBox(height: ESizes.spaceBtwItems / 2),
@@ -47,7 +48,7 @@ class LoginScreen extends StatelessWidget {
                       children: [
                         CheckButton(text: texts.rememberMe()),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const ForgetPassScreen()),
                           child: Text(texts.forgetPassword()),
                         )
                       ],
@@ -55,7 +56,7 @@ class LoginScreen extends StatelessWidget {
                     const SizedBox(height: ESizes.spaceBtwInputFields),
                     SolidButton(text: texts.login(), onClick: () {}),
                     const SizedBox(height: ESizes.spaceBtwItems),
-                    BorderButton(text: texts.createAccount(), onClick: () => Get.offAll(() => const SignupScreen())),
+                    BorderButton(text: texts.createAccount(), onClick: () => Get.to(() => const SignupScreen())),
                   ],
                 ),
               ),

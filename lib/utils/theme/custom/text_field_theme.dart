@@ -17,11 +17,11 @@ class ETextFieldTheme {
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.grey),
+      borderSide: const BorderSide(width: 1, color: Colors.black12),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.black12),
+      borderSide: const BorderSide(width: 1, color: Colors.grey),
     ),
     errorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14),

@@ -1,5 +1,5 @@
-import 'package:e_store/features/authentication/screens/verification_screen.dart';
-import 'package:e_store/common/widgets/divider.dart';
+import 'package:e_store/features/authentication/screens/verification.dart';
+import 'package:e_store/features/authentication/models/divider.dart';
 import 'package:e_store/common/widgets/form_field.dart';
 import 'package:e_store/common/widgets/solid_button.dart';
 import 'package:e_store/utils/constants/colors.dart';
