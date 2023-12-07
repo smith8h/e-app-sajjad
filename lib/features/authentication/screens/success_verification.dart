@@ -2,7 +2,6 @@ import 'package:e_store/common/styles/spacing_style.dart';
 import 'package:e_store/features/authentication/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../common/widgets/custom_shapes/border_button.dart';
 import '../../../common/widgets/custom_shapes/solid_button.dart';
 import '../../../utils/constants/enums.dart';
 import '../../../utils/constants/image_strings.dart';
