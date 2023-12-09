@@ -1,5 +1,5 @@
-import 'package:e_store/common/widgets/custom_shapes/edit_text.dart';
-import 'package:e_store/common/widgets/custom_shapes/solid_button.dart';
+import 'package:e_store/common/widgets/edit_text.dart';
+import 'package:e_store/common/widgets/solid_button.dart';
 import 'package:e_store/features/authentication/screens/reset_pass.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';

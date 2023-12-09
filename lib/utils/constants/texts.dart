@@ -107,4 +107,11 @@ class ETexts {
   String shop() => lang == AppLang.arb ? 'المتجر' : 'Shop';
   String wishList() => lang == AppLang.arb ? 'المفضلة' : 'Wish List';
   String profile() => lang == AppLang.arb ? 'الملف الشخصي' : 'Profile';
+
+  // home screen
+  String homeAppBarTitle() => lang == AppLang.arb ? 'الرئيسية' : 'Home';
+  String homeAppBarSubtitle() => lang == AppLang.arb ? 'منتجاتنا وخدماتنا' : 'Our Products and Services';
+  String search() => lang == AppLang.arb ? 'البحث عن منتج' : 'Search for a product';
+
+  // shop screen
 }

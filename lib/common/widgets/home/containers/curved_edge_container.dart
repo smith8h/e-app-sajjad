@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'curved_shape.dart';
+import '../../../../utils/constants/colors.dart';
+import '../../custom_shapes/curved_shape.dart';
 
 class CurvedEdgeContainer extends StatelessWidget {
   const CurvedEdgeContainer({super.key, this.child, this.backgroundCoIor = EColors.primary});
