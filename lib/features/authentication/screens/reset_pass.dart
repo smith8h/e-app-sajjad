@@ -1,9 +1,9 @@
-import 'package:e_store/common/widgets/border_button.dart';
+import 'package:e_store/common/widgets/custom_shapes/border_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../common/styles/spacing_style.dart';
-import '../../../common/widgets/solid_button.dart';
+import '../../../common/widgets/custom_shapes/solid_button.dart';
 import '../../../utils/constants/enums.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';

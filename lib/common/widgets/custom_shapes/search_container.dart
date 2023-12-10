@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/device/device_utility.dart';
-import '../../../../utils/helpers/helper_functions.dart';
+import '../../../utils/constants/colors.dart';
+import '../../../utils/constants/sizes.dart';
+import '../../../utils/device/device_utility.dart';
+import '../../../utils/helpers/helper_functions.dart';
 
 class SearchContainer extends StatelessWidget {
   const SearchContainer({
@@ -23,7 +23,7 @@ class SearchContainer extends StatelessWidget {
     final dark = EHelperFunctions.isDarkMode();
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
+      padding: const EdgeInsets.symmetric(horizontal: ESizes.spaceBtwItems),
       child: Container(
         width: EDeviceUtils.getScreenWidth(),
         padding: const EdgeInsets.all(ESizes.md),
