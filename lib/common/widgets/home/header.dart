@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../utils/constants/colors.dart';
-import 'containers/circular_shape.dart';
-import 'containers/curved_edge_container.dart';
+import '../circular_shape.dart';
+import '../curved_edge_container.dart';
 
 class PrimaryHeaderContainer extends StatelessWidget {
   const PrimaryHeaderContainer({super.key, required this.child});
@@ -15,8 +15,8 @@ class PrimaryHeaderContainer extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 10),
         child: Stack(
           children: [
-            Positioned(top: -150, right: -250, child: ECircularShape(backgroundCoIor: EColors.white.withOpacity(0.1))),
-            Positioned(top: 100, right: -300, child: ECircularShape(backgroundCoIor: EColors.white.withOpacity(0.1))),
+            Positioned(top: -150, right: -250, child: ECircularShape(backgroundColor: EColors.white.withOpacity(0.1))),
+            Positioned(top: 100, right: -300, child: ECircularShape(backgroundColor: EColors.white.withOpacity(0.1))),
             child,
           ],
         ),

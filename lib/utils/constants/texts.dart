@@ -80,5 +80,6 @@ class ETexts {
   String homeAppBarTitle() => lang == AppLang.arb ? 'الرئيسية' : 'Home';
   String homeAppBarSubtitle() => lang == AppLang.arb ? 'منتجاتنا وخدماتنا' : 'Our Products and Services';
   String search() => lang == AppLang.arb ? 'البحث عن منتج' : 'Search for a product';
-  String popularCategories() => lang == AppLang.arb ? 'تصنيفات شائعة' : 'Popular Categories';
+  String popularCategories() => lang == AppLang.arb ? 'مجموعات شائعة' : 'Popular Categories';
+  String popularProducts() => lang == AppLang.arb ? 'منتجات شائعة' : 'Popular Products';
 }

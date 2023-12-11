@@ -13,7 +13,6 @@ class ESizes {
   static const iconSm = 16.0;
   static const iconMd = 24.0;
   static const iconLg = 32.0;
-
   // Font sizes
   static const fontSizeSm = 14.0;
   static const fontSizeMd = 16.0;

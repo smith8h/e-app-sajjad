@@ -13,11 +13,11 @@ import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../common/widgets/custom_shapes/border_button.dart';
-import '../../../common/widgets/custom_shapes/check_button.dart';
-import '../../../common/widgets/custom_shapes/edit_text.dart';
-import '../../../common/widgets/custom_shapes/image_button.dart';
-import '../../../common/widgets/custom_shapes/solid_button.dart';
+import '../../../common/widgets/border_button.dart';
+import '../../../common/widgets/check_button.dart';
+import '../../../common/widgets/edit_text.dart';
+import '../../../common/widgets/image_button.dart';
+import '../../../common/widgets/solid_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -42,7 +42,12 @@ class LoginScreen extends StatelessWidget {
                   children: [
                     EditText(prefixIcon: Iconsax.direct_right, label: texts.email()),
                     const SizedBox(height: ESizes.spaceBtwInputFields),
-                    EditText(prefixIcon: Iconsax.password_check, label: texts.password(), suffixIcon: Iconsax.eye_slash),
+                    EditText(
+                      prefixIcon: Iconsax.password_check,
+                      label: texts.password(),
+                      suffixIcon: Iconsax.eye_slash,
+                      obscureText: true,
+                    ),
                     const SizedBox(height: ESizes.spaceBtwItems / 2),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

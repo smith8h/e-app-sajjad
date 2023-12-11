@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/enums.dart';
-import '../../../utils/constants/texts.dart';
+import '../../utils/constants/enums.dart';
+import '../../utils/constants/texts.dart';
 
 class SectionHeader extends StatelessWidget {
   const SectionHeader({
@@ -9,13 +9,13 @@ class SectionHeader extends StatelessWidget {
     required this.title,
     this.showButton = true,
     this.titleColor,
-    this.onClick,
+    this.onButtonTap,
   });
 
   final String title;
   final Color? titleColor;
   final bool showButton;
-  final VoidCallback? onClick;
+  final VoidCallback? onButtonTap;
 
   @override
   Widget build(context) {
@@ -29,7 +29,7 @@ class SectionHeader extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         // todo : change language
-        if (showButton) TextButton(onPressed: onClick, child: Text(ETexts(AppLang.arb).viewAll())),
+        if (showButton) TextButton(onPressed: onButtonTap, child: Text(ETexts(AppLang.arb).viewAll())),
       ],
     );
   }

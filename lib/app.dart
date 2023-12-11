@@ -1,4 +1,5 @@
 import 'package:e_store/features/authentication/screens/onboarding.dart';
+import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/texts.dart';
 import 'package:e_store/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +9,9 @@ class App extends StatelessWidget {
   const App({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
+    const lang = AppLang.arb;
+
     return GetMaterialApp(
       title: ETexts.appName,
       themeMode: ThemeMode.system,
@@ -16,6 +19,7 @@ class App extends StatelessWidget {
       darkTheme: ETheme.dark,
       debugShowCheckedModeBanner: false,
       home: const OnBoardingScreen(),
+      textDirection: lang == AppLang.arb ? TextDirection.rtl : TextDirection.ltr,
     );
   }
 }
