@@ -33,6 +33,7 @@ class ESizes {
   // Default spacing between sections
   static const defaultSpace = 24.0;
   static const spaceBtwItems = 16.0;
+  static const spaceBtwInputFields = 16.0;
   static const spaceBtwSections = 32.0;
 
   // Border radius
@@ -45,12 +46,11 @@ class ESizes {
 
   // Product item Directions
   static const productImageSize = 120.0;
-  static const productImageRadius = 60.0;
+  static const productImageRadius = 30.0;
   static const productItemHeight = 160.0;
 
   // Input fields
   static const inputFieldRadius = 12.0;
-  static const spaceBtwInputFields = 16.0;
 
   // Card sizes
   static const cardRadiusLg = 16.0;

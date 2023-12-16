@@ -24,4 +24,5 @@ class EImages {
   // home
   static const categoriesCosmetics = 'assets/icons/categories/icons8-cosmetics-64.png';
   static const banner = 'assets/images/banners/banner_1.jpg';
+  static const product = 'assets/images/products/iphone8_mobile.png';
 }

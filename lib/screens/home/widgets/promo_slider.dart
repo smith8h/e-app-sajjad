@@ -3,8 +3,8 @@ import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../common/widgets/rounded_image.dart';
-import '../../../common/widgets/circular_shape.dart';
+import '../../../common/widgets/containers/rounded_image.dart';
+import '../../../common/widgets/containers/circular_shape.dart';
 import '../../../features/shop/controllers/home_carousel_controller.dart';
 import '../../../utils/constants/sizes.dart';
 
@@ -45,8 +45,8 @@ class PromoSlider extends StatelessWidget {
               children: [
                 for (int i = 0; i < banners.length; i++)
                   ECircularShape(
-                    width: 20,
-                    height: 6,
+                    width: 15,
+                    height: 4,
                     backgroundColor: controller.carousalCurrentIndex.value == i
                         ? EColors.primary
                         : EHelperFunctions.isDarkMode()

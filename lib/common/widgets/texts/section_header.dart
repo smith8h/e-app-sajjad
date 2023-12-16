@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/constants/enums.dart';
-import '../../utils/constants/texts.dart';
+import '../../../utils/constants/enums.dart';
+import '../../../utils/constants/texts.dart';
 
 class SectionHeader extends StatelessWidget {
   const SectionHeader({

@@ -13,11 +13,11 @@ import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../common/widgets/border_button.dart';
-import '../../../common/widgets/check_button.dart';
-import '../../../common/widgets/edit_text.dart';
-import '../../../common/widgets/image_button.dart';
-import '../../../common/widgets/solid_button.dart';
+import '../../../common/widgets/buttons/border_button.dart';
+import '../../../common/widgets/buttons/check_button.dart';
+import '../../../common/widgets/texts/edit_text.dart';
+import '../../../common/widgets/buttons/image_button.dart';
+import '../../../common/widgets/buttons/solid_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

@@ -1,6 +1,5 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:e_store/common/widgets/app_bar.dart';
-import 'package:e_store/common/widgets/circular_shape.dart';
+import 'package:e_store/common/widgets/containers/app_bar.dart';
+import 'package:e_store/common/widgets/containers/product_card.dart';
 import 'package:e_store/screens/home/widgets/promo_slider.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
@@ -9,9 +8,8 @@ import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:sbadgeview/sbadgeview.dart';
-import '../../common/widgets/rounded_image.dart';
-import '../../common/widgets/search_container.dart';
-import '../../common/widgets/section_header.dart';
+import '../../common/widgets/containers/search_container.dart';
+import '../../common/widgets/texts/section_header.dart';
 import '../../common/widgets/home/categories.dart';
 import '../../common/widgets/home/header.dart';
 import '../../utils/constants/texts.dart';
@@ -72,9 +70,30 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(ESizes.spaceBtwItems),
               child: Column(
                 children: [
-                  const PromoSlider(banners: [EImages.banner, EImages.banner]),
+                  const PromoSlider(banners: [EImages.banner, EImages.banner], autoPlay: false),
                   const SizedBox(height: ESizes.spaceBtwItems),
                   SectionHeader(title: texts.popularProducts(), showButton: true, onButtonTap: () {}),
+                  GridView.builder(
+                    itemCount: 4,
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: ESizes.gridViewSpacing,
+                      crossAxisSpacing: ESizes.gridViewSpacing,
+                      mainAxisExtent: 262,
+                    ),
+                    itemBuilder: (_, index) => ProductCard(
+                      productName: 'عطر زهرة الربيع للنساء',
+                      productBrand: 'Loris',
+                      productPrice: '4',
+                      currency: 'د.ع',
+                      imageHeight: 160, // height of card (imageSize + 102 for oneLine title) (imageSize + 120 for twoLine title)
+                      onTap: () {},
+                      onAddPressed: () {},
+                      onHeartPressed: () {},
+                    ),
+                  ),
                 ],
               ),
             ),
