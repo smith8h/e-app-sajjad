@@ -10,17 +10,16 @@ class ECircularShape extends StatelessWidget {
     this.radius = 20,
     this.padding,
     this.child,
-    this.backgroundColor = EColors.white,
+    this.backgroundColor,
     this.margin,
+    this.showBorder = false,
   });
 
-  final double? width;
-  final double? height;
-  final double? radius;
-  final EdgeInsets? padding;
-  final EdgeInsets? margin;
+  final double? width, height, radius;
+  final EdgeInsets? padding, margin;
   final Widget? child;
-  final Color backgroundColor;
+  final Color? backgroundColor;
+  final bool showBorder;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +28,11 @@ class ECircularShape extends StatelessWidget {
       height: height,
       padding: padding,
       margin: margin,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(radius!), color: backgroundColor),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(radius!),
+        border: showBorder ? Border.all(color: EColors.grey) : null,
+        color: backgroundColor,
+      ),
       child: child,
     );
   }

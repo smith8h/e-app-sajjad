@@ -25,4 +25,7 @@ class EImages {
   static const categoriesCosmetics = 'assets/icons/categories/icons8-cosmetics-64.png';
   static const banner = 'assets/images/banners/banner_1.jpg';
   static const product = 'assets/images/products/iphone8_mobile.png';
+
+  // brands
+  static const brand = 'assets/icons/brands/zara-logo.png';
 }

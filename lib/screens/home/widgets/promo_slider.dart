@@ -3,7 +3,7 @@ import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../common/widgets/containers/rounded_image.dart';
+import '../../../common/widgets/images/rounded_image.dart';
 import '../../../common/widgets/containers/circular_shape.dart';
 import '../../../features/shop/controllers/home_carousel_controller.dart';
 import '../../../utils/constants/sizes.dart';

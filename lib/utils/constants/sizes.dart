@@ -66,5 +66,5 @@ class ESizes {
   static const loadingIndicatorSize = 36.0;
 
   // GridView spacing
-  static const gridViewSpacing = 16.0;
+  static const gridViewSpacing = 12.0;
 }

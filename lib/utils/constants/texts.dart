@@ -63,6 +63,7 @@ class ETexts {
   String forgetPasswordSubtitle() => lang == AppLang.arb
       ? 'بعض الاحيان الناس ينسون ايضا! اكتب بريدك الالكتروني وسنرسل لك طلب اعادة تعيين كلمة المرور'
       : 'Don\'t worry, people sometimes forge too, write your Email and we\'ll send you a reset email.';
+
   // reset pass
   String resetPasswordTitle() =>
       lang == AppLang.arb ? 'تم إرسال البريد الإلكتروني لإعادة تعيين كلمة المرور' : 'Password Reset Email Sent';
@@ -82,4 +83,14 @@ class ETexts {
   String search() => lang == AppLang.arb ? 'البحث عن منتج' : 'Search for a product';
   String popularCategories() => lang == AppLang.arb ? 'مجموعات شائعة' : 'Popular Categories';
   String popularProducts() => lang == AppLang.arb ? 'منتجات شائعة' : 'Popular Products';
+
+  // store screen
+  String shopAppBarTitle() => lang == AppLang.arb? 'المتجر' : 'Store';
+  String shopAppBarSubtitle() => lang == AppLang.arb? 'منتجاتنا وخدماتنا' : 'Our Products and Services';
+  String shopBrands() => lang == AppLang.arb ? 'شعارات عالمية': 'Popular Brands';
+  String brandProducts() => lang == AppLang.arb ? 'عدد المنتجات': 'Products';
+  String shopProducts() => lang == AppLang.arb? 'منتجات شائعة' : 'Popular Products';
+
+  // brands
+  String brand = 'Zara';
 }

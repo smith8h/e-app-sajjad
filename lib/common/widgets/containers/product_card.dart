@@ -1,12 +1,15 @@
 import 'package:e_store/common/styles/shadow_styles.dart';
-import 'package:e_store/common/widgets/containers/rounded_image.dart';
+import 'package:e_store/common/widgets/images/rounded_image.dart';
+import 'package:e_store/common/widgets/texts/brand_title.dart';
 import 'package:e_store/utils/constants/colors.dart';
+import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import '../buttons/circular_icon.dart';
+import '../texts/brand_title_verified.dart';
 import '../texts/product_price.dart';
 import '../texts/product_title_text.dart';
 import 'circular_shape.dart';
@@ -96,14 +99,7 @@ class VerticalProductCard extends StatelessWidget {
                 // product brand name
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: ESizes.sm),
-                  child: Row(
-                    children: [
-                      Text(productBrand,
-                          overflow: TextOverflow.ellipsis, maxLines: 1, style: Theme.of(context).textTheme.labelMedium),
-                      const SizedBox(width: ESizes.sm),
-                      const Icon(Iconsax.verify5, color: EColors.secondary, size: ESizes.iconXs),
-                    ],
-                  ),
+                  child: BrandTitleVerified(title: productBrand, brandTextSize: TextSize.small, iconSize: IconSize.xs),
                 ),
                 // const SizedBox(height: ESizes.xs),
               ],
