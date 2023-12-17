@@ -46,7 +46,7 @@ class ESizes {
 
   // Product item Directions
   static const productImageSize = 120.0;
-  static const productImageRadius = 30.0;
+  static const productImageRadius = 20.0;
   static const productItemHeight = 160.0;
 
   // Input fields

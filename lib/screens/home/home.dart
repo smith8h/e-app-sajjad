@@ -8,6 +8,7 @@ import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:sbadgeview/sbadgeview.dart';
+import '../../common/widgets/containers/grid_view.dart';
 import '../../common/widgets/containers/search_container.dart';
 import '../../common/widgets/texts/section_header.dart';
 import '../../common/widgets/home/categories.dart';
@@ -73,25 +74,29 @@ class HomeScreen extends StatelessWidget {
                   const PromoSlider(banners: [EImages.banner, EImages.banner], autoPlay: false),
                   const SizedBox(height: ESizes.spaceBtwItems),
                   SectionHeader(title: texts.popularProducts(), showButton: true, onButtonTap: () {}),
-                  GridView.builder(
+                  // HorizontalProductCard(
+                  //   productImage: EImages.product,
+                  //   productName: 'عطر زهرة الربيع للنساء',
+                  //   productBrand: 'Loris',
+                  //   productPrice: '4',
+                  //   discount: 40,
+                  //   onHeartPressed: () {},
+                  // ),
+                  const SizedBox(height: ESizes.spaceBtwItems),
+                  EGridView(
                     itemCount: 4,
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: ESizes.gridViewSpacing,
-                      crossAxisSpacing: ESizes.gridViewSpacing,
-                      mainAxisExtent: 262,
-                    ),
-                    itemBuilder: (_, index) => ProductCard(
+                    mainAxisExtent: 260,
+                    builder: (_, index) => const VerticalProductCard(
+                      productImage: EImages.product,
                       productName: 'عطر زهرة الربيع للنساء',
                       productBrand: 'Loris',
                       productPrice: '4',
-                      currency: 'د.ع',
-                      imageHeight: 160, // height of card (imageSize + 102 for oneLine title) (imageSize + 120 for twoLine title)
-                      onTap: () {},
-                      onAddPressed: () {},
-                      onHeartPressed: () {},
+                      discount: 75,
+                      productCurrency: 'د.ع',
+                      lineThroughPrice: true,
+                      productNewPrice: '1',
+                      // height of card (imageSize + 102 for oneLine title) (imageSize + 120 for twoLine title)
+                      imageHeight: 140,
                     ),
                   ),
                 ],
