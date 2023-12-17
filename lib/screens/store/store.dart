@@ -1,5 +1,6 @@
 import 'package:e_store/common/widgets/containers/app_bar.dart';
 import 'package:e_store/common/widgets/containers/grid_view.dart';
+import 'package:e_store/common/widgets/containers/tab_bar.dart';
 import 'package:e_store/common/widgets/texts/section_header.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
@@ -32,7 +33,7 @@ class StoreScreen extends StatelessWidget {
             SBadgeView(
               content: IconButton(
                 onPressed: () {},
-                icon: const Icon(Iconsax.shopping_bag, color: EColors.white),
+                icon: const Icon(Iconsax.shopping_bag,),
                 color: dark ? EColors.bgLight : EColors.bgDark,
               ),
               badgeCount: 312,
@@ -72,7 +73,7 @@ class StoreScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              bottom:
+              bottom: const ETabBar(tabs: ['Cosmetics', 'Perfumes'],)
             ),
           ],
           body: Container(),
