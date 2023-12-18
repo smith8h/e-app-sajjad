@@ -1,7 +1,8 @@
-import 'package:e_store/screens/home/home.dart';
+import 'package:e_store/features/shop/screens/home/home.dart';
+import 'package:e_store/features/shop/screens/wishlist/wish_list.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'package:e_store/screens/store/store.dart';
+import 'package:e_store/features/shop/screens/store/store.dart';
 
 class NavigationController {
   final Rx<int> selectedIndex = 0.obs;
@@ -9,7 +10,7 @@ class NavigationController {
   final screens = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(color: Colors.orange),
+    const WishListScreen(),
     Container(color: Colors.blue),
   ];
 }

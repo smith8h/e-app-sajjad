@@ -8,10 +8,18 @@ import '../texts/brand_title_verified.dart';
 import 'circular_shape.dart';
 
 class BrandCard extends StatelessWidget {
-  const BrandCard({super.key, required this.brandImage, required this.brandName, this.onPressed, this.totalProducts = 0});
+  const BrandCard({
+    super.key,
+    required this.brandImage,
+    required this.brandName,
+    this.onPressed,
+    this.totalProducts = 0,
+    this.showBorder = true,
+  });
 
   final String brandImage, brandName;
   final int totalProducts;
+  final bool showBorder;
   final VoidCallback? onPressed;
 
   @override
@@ -20,7 +28,7 @@ class BrandCard extends StatelessWidget {
       onTap: onPressed,
       child: ECircularShape(
         padding: const EdgeInsets.all(ESizes.sm),
-        showBorder: true,
+        showBorder: showBorder,
         backgroundColor: EColors.transparent,
         child: Row(
           children: [
@@ -32,7 +40,6 @@ class BrandCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   BrandTitleVerified(title: brandName, brandTextSize: TextSize.medium, iconSize: IconSize.sm),
-                  const SizedBox(height: ESizes.spaceBtwItems / 2),
                   Text(
                     '$totalProducts ${ETexts(AppLang.arb).brandProducts()}',
                     overflow: TextOverflow.ellipsis,

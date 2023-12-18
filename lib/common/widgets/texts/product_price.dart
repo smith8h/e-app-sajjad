@@ -30,7 +30,7 @@ class ProductPriceText extends StatelessWidget {
           ),
           if (newPrice != null)
             TextSpan(
-              text: ' ' + newPrice! + currency!,
+              text: ' ${newPrice!}${currency!}',
               style: isLarge ? Theme.of(context).textTheme.headlineMedium : Theme.of(context).textTheme.titleLarge,
             ),
         ],

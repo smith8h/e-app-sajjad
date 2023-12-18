@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../common/widgets/images/rounded_image.dart';
 import '../../../common/widgets/containers/circular_shape.dart';
-import '../../../features/shop/controllers/home_carousel_controller.dart';
+import '../controllers/home_carousel_controller.dart';
 import '../../../utils/constants/sizes.dart';
 
 class PromoSlider extends StatelessWidget {

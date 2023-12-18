@@ -90,6 +90,7 @@ class ETexts {
   String shopBrands() => lang == AppLang.arb ? 'شعارات عالمية': 'Popular Brands';
   String brandProducts() => lang == AppLang.arb ? 'عدد المنتجات': 'Products';
   String shopProducts() => lang == AppLang.arb? 'منتجات شائعة' : 'Popular Products';
+  String youMayLike() => lang == AppLang.arb? 'قد يعجبك ايضا' : 'You May Like';
 
   // brands
   String brand = 'Zara';

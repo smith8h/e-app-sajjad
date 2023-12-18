@@ -1,6 +1,6 @@
 import 'package:e_store/common/widgets/containers/app_bar.dart';
 import 'package:e_store/common/widgets/containers/product_card.dart';
-import 'package:e_store/screens/home/widgets/promo_slider.dart';
+import 'package:e_store/features/shop/models/promo_slider.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
@@ -8,14 +8,14 @@ import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:sbadgeview/sbadgeview.dart';
-import '../../common/widgets/containers/grid_view.dart';
-import '../../common/widgets/containers/search_container.dart';
-import '../../common/widgets/texts/section_header.dart';
-import '../../common/widgets/home/categories.dart';
-import '../../common/widgets/home/header.dart';
-import '../../utils/constants/texts.dart';
-import '../../utils/device/device_utility.dart';
-import '../../utils/helpers/helper_functions.dart';
+import '../../../../common/widgets/containers/grid_view.dart';
+import '../../../../common/widgets/containers/search_container.dart';
+import '../../../../common/widgets/texts/section_header.dart';
+import '../../../../common/widgets/home/categories.dart';
+import '../../../../common/widgets/home/header.dart';
+import '../../../../utils/constants/texts.dart';
+import '../../../../utils/device/device_utility.dart';
+import '../../../../utils/helpers/helper_functions.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: ESizes.spaceBtwItems),
                   EGridView(
                     itemCount: 4,
-                    mainAxisExtent: 260,
+                    childHeight: 260,
                     builder: (_, index) => const VerticalProductCard(
                       productImage: EImages.product,
                       productName: 'عطر زهرة الربيع للنساء',

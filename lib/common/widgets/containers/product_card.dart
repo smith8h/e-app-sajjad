@@ -1,9 +1,7 @@
 import 'package:e_store/common/styles/shadow_styles.dart';
 import 'package:e_store/common/widgets/images/rounded_image.dart';
-import 'package:e_store/common/widgets/texts/brand_title.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
-import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';

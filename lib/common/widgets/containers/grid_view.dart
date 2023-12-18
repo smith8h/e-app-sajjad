@@ -8,11 +8,12 @@ class EGridView extends StatelessWidget {
     super.key,
     required this.itemCount,
     required this.builder,
-    this.mainAxisExtent = 262,
+    this.childHeight = 262,
+    this.columns = 2,
   });
 
-  final int itemCount;
-  final double mainAxisExtent;
+  final int itemCount, columns;
+  final double childHeight;
   final Widget Function(BuildContext, int) builder;
 
   @override
@@ -24,10 +25,10 @@ class EGridView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       itemBuilder: builder,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
+        crossAxisCount: columns,
         mainAxisSpacing: ESizes.gridViewSpacing,
         crossAxisSpacing: ESizes.gridViewSpacing,
-        mainAxisExtent: mainAxisExtent,
+        mainAxisExtent: childHeight,
       ),
     );
   }
