@@ -95,4 +95,8 @@ class ETexts {
   // brands
   String brand = 'Zara';
 
+  // settings screen
+  String settingsAppBarTitle() => lang == AppLang.arb? 'الملف الشخصي' : 'Profile';
+  String changePassword() => lang == AppLang.arb? 'تغيير كلمة المرور' : 'Change Password';
+  String logout() => lang == AppLang.arb? 'تسجيل الخروج' : 'Logout';
 }

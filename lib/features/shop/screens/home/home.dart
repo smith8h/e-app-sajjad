@@ -71,17 +71,9 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(ESizes.spaceBtwItems),
               child: Column(
                 children: [
-                  const PromoSlider(banners: [EImages.banner, EImages.banner], autoPlay: false),
+                  const PromoSlider(banners: [EImages.banner, EImages.banner], autoPlay: true),
                   const SizedBox(height: ESizes.spaceBtwItems),
                   SectionHeader(title: texts.popularProducts(), showButton: true, onButtonTap: () {}),
-                  // HorizontalProductCard(
-                  //   productImage: EImages.product,
-                  //   productName: 'عطر زهرة الربيع للنساء',
-                  //   productBrand: 'Loris',
-                  //   productPrice: '4',
-                  //   discount: 40,
-                  //   onHeartPressed: () {},
-                  // ),
                   const SizedBox(height: ESizes.spaceBtwItems),
                   EGridView(
                     itemCount: 4,
@@ -93,9 +85,6 @@ class HomeScreen extends StatelessWidget {
                       productPrice: '4',
                       discount: 75,
                       productCurrency: 'د.ع',
-                      lineThroughPrice: true,
-                      productNewPrice: '1',
-                      // height of card (imageSize + 102 for oneLine title) (imageSize + 120 for twoLine title)
                       imageHeight: 140,
                     ),
                   ),

@@ -20,7 +20,7 @@ class WishListScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: EAppBar(
-        title: Text(texts.wishList(), style: Theme.of(context).textTheme.headlineMedium),
+        title: Text(texts.wishList(), style: Theme.of(context).textTheme.headlineSmall),
         actions: [CircularImage(icon: Iconsax.add, onPressed: () => Get.to(const HomeScreen()))],
       ),
       body: SingleChildScrollView(

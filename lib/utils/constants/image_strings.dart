@@ -28,4 +28,7 @@ class EImages {
 
   // brands
   static const brand = 'assets/icons/brands/zara-logo.png';
+
+  // profile
+  static const profile = 'assets/images/content/user.png';
 }

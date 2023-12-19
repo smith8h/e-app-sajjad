@@ -109,7 +109,37 @@ class StoreScreen extends StatelessWidget {
                   VerticalProductCard(
                       productImage: EImages.product, productName: 'Demon Scent', productBrand: texts.brand, productPrice: '5'),
                 ],
-              )
+              ),
+              CategoryTab(
+                showcases: [
+                  BrandShowcase(
+                    brandName: texts.brand,
+                    brandImage: EImages.brand,
+                    brandProductsCount: 20,
+                    items: const [EImages.brand, EImages.brand, EImages.brand],
+                    isNetworkImage: false,
+                  ),
+                  BrandShowcase(
+                    brandName: texts.brand,
+                    brandImage: EImages.brand,
+                    brandProductsCount: 20,
+                    items: const [EImages.brand, EImages.brand, EImages.brand],
+                    isNetworkImage: false,
+                  ),
+                ],
+                products: [
+                  VerticalProductCard(
+                      productImage: EImages.product, productName: 'Demon Scent', productBrand: texts.brand, productPrice: '5'),
+                  VerticalProductCard(
+                      productImage: EImages.product, productName: 'Demon Scent', productBrand: texts.brand, productPrice: '5'),
+                  VerticalProductCard(
+                      productImage: EImages.product, productName: 'Demon Scent', productBrand: texts.brand, productPrice: '5'),
+                  VerticalProductCard(
+                      productImage: EImages.product, productName: 'Demon Scent', productBrand: texts.brand, productPrice: '5'),
+                  VerticalProductCard(
+                      productImage: EImages.product, productName: 'Demon Scent', productBrand: texts.brand, productPrice: '5'),
+                ],
+              ),
             ],
           ),
         ),

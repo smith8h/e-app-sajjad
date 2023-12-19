@@ -8,7 +8,7 @@ import 'package:iconsax/iconsax.dart';
 import 'features/shop/controllers/navigation_controller.dart';
 import 'common/widgets/custom_shapes/nav_menu_item.dart';
 import 'features/shop/screens/home/home.dart';
-import 'features/shop/screens/profile/profile.dart';
+import 'features/personalization/screens/settings/settings.dart';
 import 'features/shop/screens/store/store.dart';
 import 'features/shop/screens/wishlist/wish_list.dart';
 
@@ -26,7 +26,7 @@ class NavigationMenu extends StatelessWidget {
       const HomeScreen(),
       const StoreScreen(),
       const WishListScreen(),
-      const ProfileScreen(),
+      const SettingsScreen(),
     ];
 
     return Scaffold(
