@@ -1,8 +1,9 @@
 import 'package:e_store/common/styles/spacing_style.dart';
 import 'package:e_store/features/authentication/screens/forget_pass.dart';
 import 'package:e_store/features/authentication/screens/signup.dart';
-import 'package:e_store/features/authentication/models/divider.dart';
-import 'package:e_store/features/authentication/models/header.dart';
+import 'package:e_store/common/widgets/login/divider.dart';
+import 'package:e_store/common/widgets/login/header.dart';
+import 'package:e_store/navigatin_menu.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -12,11 +13,11 @@ import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../common/widgets/border_button.dart';
-import '../../../common/widgets/check_button.dart';
-import '../../../common/widgets/form_field.dart';
-import '../../../common/widgets/image_button.dart';
-import '../../../common/widgets/solid_button.dart';
+import '../../../common/widgets/buttons/border_button.dart';
+import '../../../common/widgets/buttons/check_button.dart';
+import '../../../common/widgets/texts/edit_text.dart';
+import '../../../common/widgets/buttons/image_button.dart';
+import '../../../common/widgets/buttons/solid_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -41,7 +42,12 @@ class LoginScreen extends StatelessWidget {
                   children: [
                     EditText(prefixIcon: Iconsax.direct_right, label: texts.email()),
                     const SizedBox(height: ESizes.spaceBtwInputFields),
-                    EditText(prefixIcon: Iconsax.password_check, label: texts.password(), suffixIcon: Iconsax.eye_slash),
+                    EditText(
+                      prefixIcon: Iconsax.password_check,
+                      label: texts.password(),
+                      suffixIcon: Iconsax.eye_slash,
+                      obscureText: true,
+                    ),
                     const SizedBox(height: ESizes.spaceBtwItems / 2),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,7 +60,7 @@ class LoginScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: ESizes.spaceBtwInputFields),
-                    SolidButton(text: texts.login(), onClick: () {}),
+                    SolidButton(text: texts.login(), onClick: () => Get.to(() => const NavigationMenu())),
                     const SizedBox(height: ESizes.spaceBtwItems),
                     BorderButton(text: texts.createAccount(), onClick: () => Get.to(() => const SignupScreen())),
                   ],

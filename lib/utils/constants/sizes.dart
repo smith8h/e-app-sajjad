@@ -13,7 +13,6 @@ class ESizes {
   static const iconSm = 16.0;
   static const iconMd = 24.0;
   static const iconLg = 32.0;
-
   // Font sizes
   static const fontSizeSm = 14.0;
   static const fontSizeMd = 16.0;
@@ -34,6 +33,7 @@ class ESizes {
   // Default spacing between sections
   static const defaultSpace = 24.0;
   static const spaceBtwItems = 16.0;
+  static const spaceBtwInputFields = 16.0;
   static const spaceBtwSections = 32.0;
 
   // Border radius
@@ -46,12 +46,11 @@ class ESizes {
 
   // Product item Directions
   static const productImageSize = 120.0;
-  static const productImageRadius = 60.0;
+  static const productImageRadius = 20.0;
   static const productItemHeight = 160.0;
 
   // Input fields
   static const inputFieldRadius = 12.0;
-  static const spaceBtwInputFields = 16.0;
 
   // Card sizes
   static const cardRadiusLg = 16.0;
@@ -67,5 +66,5 @@ class ESizes {
   static const loadingIndicatorSize = 36.0;
 
   // GridView spacing
-  static const gridViewSpacing = 16.0;
+  static const gridViewSpacing = 12.0;
 }

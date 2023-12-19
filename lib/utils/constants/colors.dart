@@ -49,7 +49,8 @@ class EColors {
   static const info = Color(0xFF1976D2);
 
   // neutral colors
-  static const block = Color(0xFF232323);
+  static const transparent = Colors.transparent;
+  static const black = Color(0xFF232323);
   static const darkerGrey = Color(0xFF4F4F4F);
   static const darkGrey = Color(0xFF939393);
   static const grey = Color(0xFFE0E0E0);

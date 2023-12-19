@@ -1,9 +1,9 @@
-import 'package:e_store/common/widgets/form_field.dart';
-import 'package:e_store/common/widgets/solid_button.dart';
 import 'package:e_store/features/authentication/screens/reset_pass.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
+import '../../../common/widgets/texts/edit_text.dart';
+import '../../../common/widgets/buttons/solid_button.dart';
 import '../../../utils/constants/enums.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/constants/texts.dart';

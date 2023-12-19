@@ -1,6 +1,5 @@
 import 'package:e_store/features/authentication/screens/login.dart';
-import 'package:e_store/common/widgets/border_button.dart';
-import 'package:e_store/common/widgets/solid_button.dart';
+import 'package:e_store/common/widgets/buttons/border_button.dart';
 import 'package:e_store/features/authentication/screens/success_verification.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
@@ -9,6 +8,7 @@ import 'package:e_store/utils/constants/texts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../common/widgets/buttons/solid_button.dart';
 import '../../../utils/device/device_utility.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
