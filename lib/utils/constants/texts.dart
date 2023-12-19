@@ -94,4 +94,5 @@ class ETexts {
 
   // brands
   String brand = 'Zara';
+
 }

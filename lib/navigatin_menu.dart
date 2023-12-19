@@ -7,6 +7,10 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'features/shop/controllers/navigation_controller.dart';
 import 'common/widgets/custom_shapes/nav_menu_item.dart';
+import 'features/shop/screens/home/home.dart';
+import 'features/shop/screens/profile/profile.dart';
+import 'features/shop/screens/store/store.dart';
+import 'features/shop/screens/wishlist/wish_list.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -17,6 +21,13 @@ class NavigationMenu extends StatelessWidget {
     EDeviceUtils.setDarkModeBarColors(darkMode);
     var texts = ETexts(AppLang.arb);
     var navController = Get.put(NavigationController());
+
+    final screens = [
+      const HomeScreen(),
+      const StoreScreen(),
+      const WishListScreen(),
+      const ProfileScreen(),
+    ];
 
     return Scaffold(
       bottomNavigationBar: Obx(
@@ -34,7 +45,9 @@ class NavigationMenu extends StatelessWidget {
           onDestinationSelected: (index) => navController.selectedIndex.value = index,
         ),
       ),
-      body: Obx(() => navController.screens[navController.selectedIndex.value]),
+      body: Obx(() => screens[navController.selectedIndex.value]),
     );
   }
+
+
 }
