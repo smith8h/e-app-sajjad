@@ -11,6 +11,8 @@ import 'package:e_store/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../common/widgets/containers/user_profile_tile.dart';
+import '../profile/profile.dart';
+import 'package:get/get.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -37,7 +39,7 @@ class SettingsScreen extends StatelessWidget {
                     profileImage: EImages.profile,
                     profileName: 'Hussein Shakir',
                     profileEmail: 'husseinshakir81@gmail.com',
-                    onEditBtnPressed: () {},
+                    onEditBtnPressed: () => Get.to(const ProfileScreen()),
                   ),
                   const SizedBox(height: ESizes.defaultSpace),
                 ],

@@ -1,5 +1,7 @@
+import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/device/device_utility.dart';
+import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -20,7 +22,11 @@ class EAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: AppBar(
         automaticallyImplyLeading: false,
         leading: showBackArrow
-            ? IconButton(icon: const Icon(Iconsax.arrow_left), onPressed: () => Get.back())
+            ? IconButton(
+                icon: const Icon(Iconsax.arrow_right_1),
+                color: EHelperFunctions.isDarkMode() ? EColors.white : EColors.black,
+                onPressed: () => Get.back(),
+              )
             : leadingIcon != null
                 ? IconButton(icon: Icon(leadingIcon), onPressed: leadingOnPressed)
                 : null,

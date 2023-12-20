@@ -38,7 +38,7 @@ class SignupScreen extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Expanded(child: EditText(prefixIcon: Iconsax.user, label: texts.name())),
+                        Expanded(child: EditText(prefixIcon: Iconsax.user, label: texts.firstName())),
                         const SizedBox(width: ESizes.spaceBtwInputFields),
                         Expanded(child: EditText(prefixIcon: Iconsax.user, label: texts.lastname())),
                       ],

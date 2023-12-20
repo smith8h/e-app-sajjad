@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class BorderButton extends StatelessWidget {
-  const BorderButton({
+  const   BorderButton({
     super.key,
     required this.text,
+    this.textColor,
     required this.onClick,
   });
 
   final String text;
+  final Color? textColor;
   final VoidCallback onClick;
 
   @override
@@ -16,7 +18,7 @@ class BorderButton extends StatelessWidget {
       width: double.infinity,
       child: OutlinedButton(
         onPressed: onClick,
-        child: Text(text),
+        child: Text(text, style: TextStyle(color: textColor)),
       ),
     );
   }

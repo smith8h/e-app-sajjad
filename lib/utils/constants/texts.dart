@@ -35,7 +35,7 @@ class ETexts {
 
   // signup
   String signupTitle() => lang == AppLang.arb ? 'للنشئ حسابك' : 'Let\'s Create Your Account';
-  String name() => lang == AppLang.arb ? 'الاسم الاول' : 'First Name';
+  String firstName() => lang == AppLang.arb ? 'الاسم الاول' : 'First Name';
   String lastname() => lang == AppLang.arb ? 'الاسم الثاني' : 'Last Name';
   String username() => lang == AppLang.arb ? 'المعرف الشخصي' : 'Username';
   String phoneNumber() => lang == AppLang.arb ? 'رقم الهاتف' : 'Phone Number';
@@ -118,4 +118,9 @@ class ETexts {
   String uploadData() => lang == AppLang.arb? 'تحميل البيانات' : 'Upload Data';
   String saveDataToCloud() => lang == AppLang.arb? 'تحميل وحفظ البيانات في السحابة' : 'Save data to cloud and save it in your account';
   String logout() => lang == AppLang.arb? 'تسجيل الخروج' : 'Logout';
+
+  // profile screen
+  String changeProfilePicture() => lang == AppLang.arb? 'تغيير الصورة الشخصية' : 'Change profile picture';
+  String profileInformation() => lang == AppLang.arb? 'المعلومات الشخصية' : 'Profile Information';
+  String name() => lang == AppLang.arb? 'الاسم' : 'Name';
 }
