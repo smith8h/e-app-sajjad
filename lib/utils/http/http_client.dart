@@ -2,7 +2,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class EHttpHelper {
-  static const String _baseUrl = 'https://your-api-base-url.com'; // todo: Replace with your API base URL
+  // todo: Replace with your API base URL
+  static const String _baseUrl = 'https://your-api-base-url.com';
 
   // Helper method to make a GET request
   static Future<Map<String, dynamic>> get(String endpoint) async {

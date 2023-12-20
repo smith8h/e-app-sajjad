@@ -1,3 +1,5 @@
+import 'package:e_store/utils/constants/enums.dart';
+import 'package:e_store/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -54,7 +56,7 @@ class EHelperFunctions {
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
               // TODO : change lang.
-              child: const Text('OK'),
+              child: Text(ETexts(AppLang.arb).ok()),
             ),
           ],
         );

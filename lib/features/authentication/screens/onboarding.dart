@@ -23,7 +23,7 @@ class OnBoardingScreen extends StatelessWidget {
     var onBoardingItems = [
       {
         'image': EImages.onBoarding1,
-        'title': texts.onBoarding1(), // Todo : change from settings
+        'title': texts.onBoarding1(),
         'subtitle': texts.onBoarding1Subtitle(),
       },
       {

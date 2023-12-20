@@ -32,7 +32,7 @@ class CircularImage extends StatelessWidget {
         color: backgroundColor ?? (dark ? EColors.black.withOpacity(.9) : EColors.white.withOpacity(.9)),
         borderRadius: BorderRadius.circular(100),
       ),
-      child: IconButton(onPressed: onPressed, icon: Icon(icon, color: color, size: size,)),
+      child: Center(child: IconButton(onPressed: onPressed, icon: Icon(icon, color: color, size: size,))),
     );
   }
 }

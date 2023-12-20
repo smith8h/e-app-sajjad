@@ -1,3 +1,4 @@
+import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/enums.dart';
@@ -24,6 +25,8 @@ class BrandCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = EHelperFunctions.isDarkMode();
+
     return GestureDetector(
       onTap: onPressed,
       child: ECircularShape(
@@ -32,7 +35,12 @@ class BrandCard extends StatelessWidget {
         backgroundColor: EColors.transparent,
         child: Row(
           children: [
-            Flexible(child: ECircularImage(image: brandImage, backgroundColor: EColors.transparent)),
+            Flexible(
+                child: ECircularImage(
+              image: brandImage,
+              backgroundColor: EColors.transparent,
+              overlayColor: dark ? EColors.white : EColors.black,
+            )),
             const SizedBox(width: ESizes.spaceBtwItems / 2),
             Expanded(
               child: Column(

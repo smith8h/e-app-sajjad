@@ -97,6 +97,25 @@ class ETexts {
 
   // settings screen
   String settingsAppBarTitle() => lang == AppLang.arb? 'الملف الشخصي' : 'Profile';
-  String changePassword() => lang == AppLang.arb? 'تغيير كلمة المرور' : 'Change Password';
+  String accountSettings() => lang == AppLang.arb? 'اعدادات الحساب' : 'Account Settings';
+  String myAddresses() => lang == AppLang.arb? 'عناويني' : 'My Addresses';
+  String shoppingDeliveryAddresses() => lang == AppLang.arb? 'ادارة عناوين التوصيل' : 'Set shopping delivery addresses';
+  String myCart() => lang == AppLang.arb? 'سلتي' : 'My Cart';
+  String addRemoveProducts() => lang == AppLang.arb? 'اضافة وحذف المنتجات والتحقق من الطلبات' : 'Add, remove';
+  String myOrders() => lang == AppLang.arb? 'طلباتي' : 'My Orders';
+  String inProgressAndCompleted() => lang == AppLang.arb? 'الطلبات قيد المعالجة والمكتملة' : 'In-Progress and completed orders';
+  String notifications() => lang == AppLang.arb? 'الاشعارات' : 'Notifications';
+  String kindOfNotificationMessages() => lang == AppLang.arb? 'ادارة رسائل الاشعارات' : 'Set any kind of notification messages';
+  String accountPrivacy() => lang == AppLang.arb? 'الخصوصية' : 'Account Privacy';
+  String manageDataUsage() => lang == AppLang.arb? 'ادارة البيانات والمستخدمين' : 'Manage data usage and connected accounts';
+  String appSettings() => lang == AppLang.arb? 'اعدادات التطبيق' : 'App Settings';
+  String language() => lang == AppLang.arb? 'اللغة' : 'Language';
+  String changeLanguage() => lang == AppLang.arb? 'تغيير لغة التطبيق' : 'Change app language';
+  String darkMode() => lang == AppLang.arb? 'الوضع الداكن' : 'Dark Mode';
+  String changeDarkMode() => lang == AppLang.arb? 'تغيير الوضع الداكن' : 'Change dark mode';
+  String hdImageQuality() => lang == AppLang.arb? 'دقة صورة عالية الجودة' : 'HD Image Quality';
+  String loadHDImageInApp() => lang == AppLang.arb? 'تحميل الصور بدقة عالية الجودة' : 'Load images in HD quality';
+  String uploadData() => lang == AppLang.arb? 'تحميل البيانات' : 'Upload Data';
+  String saveDataToCloud() => lang == AppLang.arb? 'تحميل وحفظ البيانات في السحابة' : 'Save data to cloud and save it in your account';
   String logout() => lang == AppLang.arb? 'تسجيل الخروج' : 'Logout';
 }

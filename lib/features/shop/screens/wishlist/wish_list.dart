@@ -2,6 +2,7 @@ import 'package:e_store/common/widgets/containers/app_bar.dart';
 import 'package:e_store/common/widgets/containers/grid_view.dart';
 import 'package:e_store/common/widgets/containers/product_card.dart';
 import 'package:e_store/features/shop/screens/home/home.dart';
+import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -21,7 +22,9 @@ class WishListScreen extends StatelessWidget {
     return Scaffold(
       appBar: EAppBar(
         title: Text(texts.wishList(), style: Theme.of(context).textTheme.headlineSmall),
-        actions: [CircularImage(icon: Iconsax.add, onPressed: () => Get.to(const HomeScreen()))],
+        actions: [
+          CircularImage(icon: Iconsax.add, backgroundColor: EColors.transparent, onPressed: () => Get.to(const HomeScreen()))
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -37,6 +40,7 @@ class WishListScreen extends StatelessWidget {
                   productName: 'Demon Scent',
                   productBrand: texts.brand,
                   productPrice: '10',
+                  largePrice: false,
                 ),
               )
             ],
