@@ -21,7 +21,7 @@ class ProfileMenuTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: ESizes.spaceBtwItems),
+        padding: const EdgeInsets.symmetric(vertical: ESizes.spaceBtwItems * .7),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [

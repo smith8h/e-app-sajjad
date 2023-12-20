@@ -121,6 +121,11 @@ class ETexts {
 
   // profile screen
   String changeProfilePicture() => lang == AppLang.arb? 'تغيير الصورة الشخصية' : 'Change profile picture';
-  String profileInformation() => lang == AppLang.arb? 'المعلومات الشخصية' : 'Profile Information';
+  String profileInformation() => lang == AppLang.arb? 'المعلومات العامة' : 'Profile Information';
   String name() => lang == AppLang.arb? 'الاسم' : 'Name';
+  String personalInformation() => lang == AppLang.arb? 'المعلومات الشخصية' : 'Personal Information';
+  String gender() => lang == AppLang.arb? 'الجنس' : 'Gender';
+  String userId() => lang == AppLang.arb? 'عنوان المستخدم' : 'User ID';
+  String closeAccount() => lang == AppLang.arb? 'غلق الحساب' : 'Close Account';
+
 }
